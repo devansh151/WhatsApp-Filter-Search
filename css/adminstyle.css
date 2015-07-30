@@ -1,0 +1,143 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(http://weloveiconfonts.com/api/?family=typicons);
+[class*="typicons-"]:before {
+  font-family: 'Typicons', sans-serif;
+}
+
+.module {
+  width:100%;
+  margin:0;
+}
+
+
+.discussion {
+  list-style: none;
+  background:none;
+  margin:0;
+  padding:0;
+}
+.discussion li {
+  padding:10;
+  display:block;
+  cursor:pointer;
+  border-bottom:1px solid #E2DBD8;
+  height:62px;
+}
+.discussion li:hover,.discussion li:focus {
+background:#FED859;
+
+}
+.discussion .avatar {
+  width: 40px;
+  height:40px;
+  position: relative;
+  float:left;
+}
+.discussion .avatar img {
+  display: block;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+}
+
+
+.messages {
+  background:none;
+  padding: 20px;
+  margin: -10px 0px 0px 30px;
+  position:relative;
+}
+.messages p {
+  font-size:1.2rem;
+  margin: 0;
+  float:left;
+}
+
+.messages time{
+  font-size:1rem;
+  color: #ccc;
+  float:right;
+}
+
+
+
+		body
+		{
+			background:#00acc1;
+		}
+      * {
+        box-sizing: border-box;
+      }
+      
+		.container
+		{
+			margin:10px auto;
+			width:30vw;
+		}
+      .page {
+        transform: translateY(1080px);
+        transition: transform 0 linear;
+        display: none;
+        opacity: 0;
+        font-size: 16px;
+		
+		
+		margin-top:0px;
+      }
+
+      .page.active {
+        transform: translateY(0px);
+        transition: all 0.3s ease-out;
+        display: block;
+        opacity: 1;
+		height:85vh;
+      }
+	  
+  body .well, .container .well
+  {
+	  padding: 0px 15px 0px 15px;
+  }
+  .col-md-1,.col-md-2,.col-md-3,.col-md-4,.col-md-5,.col-md-6,.col-md-7,.col-md-8,.col-md-9,.col-md-10,.col-md-11,.col-md-12
+  {
+	  height:inherit;
+  }
+  .head
+  {
+	  border-bottom:5px dotted #E2DBD8;
+  }
+  .head h1
+  {
+	  color:#00acc1;
+  }
+ 
+  .alluserdiv .allusers
+  {
+	  
+	  height:66vh;
+	  overflow-y:scroll;
+  }
+  .alluserdiv
+  {
+	  border-right:1px solid #E2DBD8;
+  }
+
+ 
+.search
+{
+	padding:20px 20px 0px 20px;
+	border-bottom:1px solid #E2DBD8;
+}
+.searchinput
+{
+	margin-left:20px;
+	border:none;
+	color:#555;
+	font-size:14px;
+	width:80%;
+}
+.search span
+{
+	color:#FED859;
+}
+
