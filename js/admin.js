@@ -57,7 +57,7 @@ $(document).ready(function() {
 		
 		
 var newIds = new Array();
-        
+var node;        
 $.material.init();
 		
 $(window).load(function() {
@@ -66,12 +66,20 @@ $(window).load(function() {
 getAllUsers();
             
 });
-
+function appendNode(node)
+{
+	
+	if(typeof(node)==='undefined')
+	{
+		node='';
+	}
+return node;
+}
 //Function to get all users in a sorted way alphbeticall=============================================================================		
 function getAllUsers() {
 		chatIds = sortByKey(chatIds, 'name');
 		//alert(JSON.stringify(chatIds));
-		var v, node, count = 0;
+		var v,count = 0;
 				var topbar = '<section class="module">\
 		 \
 		  <ol class="discussion">';
@@ -89,7 +97,7 @@ function getAllUsers() {
 				<p>' + chatIds[count].name + '</p>\
 				<time datetime="2009-11-13T20:00">'+chatIds[count].designation+'</time>\
 			  </div>\
-			</li>' + node;
+			</li>' + appendNode(node);
 				   
 					count++;
 		
@@ -175,7 +183,7 @@ function updateUserList() {
 <span class="hidden">'+newIds[v].id+'</span>\
 							<time datetime="2009-11-13T20:00">'+newIds[v].designation+'</time>\
 						  </div>\
-						</li>' + node;
+						</li>' + appendNode(node);
 
 
 
