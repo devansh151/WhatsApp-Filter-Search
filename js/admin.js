@@ -70,7 +70,7 @@ getAllUsers();
 //Function to get all users in a sorted way alphbeticall=============================================================================		
 function getAllUsers() {
 		chatIds = sortByKey(chatIds, 'name');
-		alert(JSON.stringify(chatIds));
+		//alert(JSON.stringify(chatIds));
 		var v, node, count = 0;
 				var topbar = '<section class="module">\
 		 \
